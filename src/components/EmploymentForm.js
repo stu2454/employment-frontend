@@ -119,8 +119,11 @@ const EmploymentForm = () => {
     const participantData = { ...formData };
 
     try {
-      await axios.post('http://localhost:5001/api/providers', providerData);
-      await axios.post('http://localhost:5001/api/participants', participantData);
+      const apiUrl = process.env.REACT_APP_API_URL; // Use environment variable for backend URL
+
+      await axios.post(`${apiUrl}/api/providers`, providerData);
+      await axios.post(`${apiUrl}/api/participants`, participantData);
+
       alert('Data submitted successfully');
     } catch (error) {
       console.error('There was an error submitting the data:', error);
