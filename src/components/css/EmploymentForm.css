@@ -1,0 +1,148 @@
+.tabs button {
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+  background-color: #f1f1f1;
+  transition: 0.3s;
+  margin-right: 5px;
+}
+
+.tabs button:hover {
+  background-color: #ddd;
+}
+
+.tabs button.active {
+  background-color: #ccc;
+}
+
+.tab-content {
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  margin-top: 10px;
+}
+
+.progress-bar {
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  overflow: hidden;
+  height: 10px;
+  margin-top: 10px;
+}
+
+.progress {
+  background-color: #6b2976; /* NDIS purple */
+  height: 100%;
+  width: 0;
+  transition: width 0.3s;
+}
+
+.navigation-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.navigation-buttons button {
+  padding: 15px 30px; /* Increased padding for larger buttons */
+  font-size: 1.5rem; /* Larger font size for better visibility */
+  background-color: #6b2976; /* NDIS purple */
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border-radius: 5px;
+}
+
+.navigation-buttons button:hover {
+  background-color: #5a2366;
+}
+
+.submit-container {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.submit-button {
+  padding: 15px 30px; /* Consistent padding for size */
+  font-size: 1.5rem; /* Larger font size for visibility */
+  background-color: #6b2976; /* NDIS purple for Next/Previous */
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border-radius: 5px; /* Rounded corners */
+  margin: 0 auto;
+}
+
+/* Submit button styled with green background and black text */
+.submit-button {
+  background-color: #4CAF50; /* Green background */
+  color: #000; /* Black text */
+  margin-top: 15px; /* Slight spacing for positioning */
+}
+
+.submit-button:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+.submit-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* Arrange all form fields vertically */
+.form-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px; /* Space between fields */
+  width: 100%;
+}
+
+.tab-content label {
+  margin-bottom: 5px; /* Space between label and input */
+  font-weight: bold;
+}
+
+.tab-content input[type="text"],
+.tab-content input[type="email"],
+.tab-content input[type="number"],
+.tab-content input[type="date"],
+.tab-content select,
+.tab-content textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Styles for two-column layout in Support Provided tab */
+.support-provided-columns {
+  display: flex;
+  gap: 25px; /* Space between the two columns */
+}
+
+.column {
+  flex: 1;
+  max-width: 50%; /* Limit each column to 50% width */
+  min-width: 300px; /* Minimum width for readability */
+}
+
+.column .form-field {
+  width: 100%; /* Full width within each column */
+}
+
+.single-column .form-field {
+  width: 40%; /* Limit fields to 40% */
+  margin: 0 auto 20px !important; /* Center and space between fields */
+  box-sizing: border-box;
+}
+
+.support-provided-columns .column .form-field {
+  width: 100% !important; /* Full width for two-column layout */
+}
